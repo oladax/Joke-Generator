@@ -2,7 +2,7 @@
 
 const jokeDiv = document.getElementById('Joke')
 //const Btn = document.getElementById('button')
-const url =  "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+const url =  "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,explicit&type=single";
 
 
 function acquireJoke() {
