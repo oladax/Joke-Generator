@@ -69,6 +69,11 @@ img{
     animation-direction: alternate-reverse;
 }
 
+span{
+    color: orangered;
+    font-size: 2rem;
+}
+
 /*/ animation for emoji/*/
 
 @keyframes emoji {
