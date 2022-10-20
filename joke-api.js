@@ -15,11 +15,15 @@ function acquireJoke() {
         jokeDiv.innerHTML = `${json.joke}`;
         // add the content-fade class
        // jokeDiv.classList.add("content-fade");
+        
+        .catch(() => {
+		        jokeDiv.innerHTML = 'Hi,I am Oladax,please check your internet connection and click the button again.
+
+	})
 const jokespeech = (jokeDiv.innerHTML)
  responsiveVoice.speak(jokespeech)
       });
-
-      
+    
   }
 
   //Btn.addEventListener("click", acquireJoke);
