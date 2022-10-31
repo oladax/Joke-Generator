@@ -44,7 +44,17 @@ var speech = new SpeechSynthesisUtterance();
   //speech function
   function speech (){
     const jokespeech = (jokeDiv.innerHTML)
- responsiveVoice.speak(jokespeech)
+    var speech = new SpeechSynthesisUtterance();
+
+    // defing speech properties
+    speech.lang =  "en-NG";
+    speech.text = jokespeech;
+    speech.volume = 30;
+    speech.pitch = 1;
+    speech.rate = 1;
+
+
+    window.speechSynthesis.speak(speech)
   }
 
 
